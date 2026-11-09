@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Presentasi interaktif: Dampak Multimedia dalam Healthcare, Education, dan Entertainment">
+<title>Dampak Multimedia dalam Industri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+<main id="deck" aria-live="polite">
+
+<!-- 1 -->
+<section class="slide title-slide">
+  <div>
+    <h1>Dampak Multimedia<br>dalam Industri</h1>
+    <p class="lead">Healthcare, Education, dan Entertainment</p>
+    <p class="meta">SENDY PRASETYA NUGRAHA · 1412240078<br>RENDY EKA ARIYANTO · 1412240074</p>
+    <p class="hint">Tekan tombol panah atau geser layar untuk mulai</p>
+  </div>
+  <div class="orb" aria-hidden="true"></div>
+</section>
+
+<!-- 2 -->
+<section class="slide light">
+  <h2>Apa itu multimedia, dan mengapa penting?</h2>
+  <p class="lead">Multimedia menggabungkan beberapa jenis media dalam satu pengalaman, sehingga informasi lebih mudah dipahami dan diingat.</p>
+  <div class="chips"><span>Teks</span><span>Gambar</span><span>Audio</span><span>Video</span><span>Animasi</span><span>Interaksi</span></div>
+  <h3>Tujuan presentasi</h3>
+  <ul class="list">
+    <li><strong>Memahami</strong> peran multimedia di healthcare, education, dan entertainment.</li>
+    <li><strong>Menganalisis</strong> studi kasus nyata beserta dampak positif dan tantangannya.</li>
+    <li><strong>Menilai</strong> arah perkembangan multimedia ke depan.</li>
+  </ul>
+</section>
+
+<!-- 3 -->
+<section class="slide teal split">
+  <div><h2>Healthcare: informasi medis jadi terlihat</h2><p class="lead">Pasien yang paham kondisinya cenderung lebih patuh berobat. Visual membantu pemahaman itu.</p></div>
+  <div class="tiles">
+    <div><h3>Telemedicine</h3><p>Konsultasi lewat video dan chat tanpa ke klinik.</p></div>
+    <div><h3>Visualisasi 3D</h3><p>CT dan MRI diolah menjadi model 3D.</p></div>
+    <div><h3>Terapi VR</h3><p>Simulasi untuk rehabilitasi dan fobia.</p></div>
+    <div><h3>Edukasi pasien</h3><p>Animasi yang menjelaskan prosedur sederhana.</p></div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <h2>Healthcare: studi kasus</h2>
+  <div class="rows">
+    <article><figure class="fig" data-ph="Taruh gambar: images/healthcare-vr.webp"><img src="images/healthcare-vr.webp" alt="Pasien memakai headset VR untuk latihan rehabilitasi" width="800" height="500" loading="lazy" onerror="this.remove()"><figcaption>Foto: [nama fotografer], [sumber]</figcaption></figure><div><h3>Rehabilitasi dengan VR</h3><p>Latihan gerak dikemas seperti game, sehingga pasien pemulihan stroke lebih termotivasi dan geraknya bisa dipantau.</p></div></article>
+    <article><figure class="fig" data-ph="Taruh gambar: images/healthcare-anatomi.webp"><img src="images/healthcare-anatomi.webp" alt="Model 3D anatomi jantung di layar" width="800" height="500" loading="lazy" onerror="this.remove()"><figcaption>Foto: [nama fotografer], [sumber]</figcaption></figure><div><h3>Animasi 3D anatomi</h3><p>Aplikasi seperti Complete Anatomy dipakai mahasiswa kedokteran dan dokter untuk menjelaskan struktur tubuh.</p></div></article>
+    <article><figure class="fig" data-ph="Taruh gambar: images/healthcare-telemedicine.webp"><img src="images/healthcare-telemedicine.webp" alt="Dokter berkonsultasi lewat video call" width="800" height="500" loading="lazy" onerror="this.remove()"><figcaption>Foto: [nama fotografer], [sumber]</figcaption></figure><div><h3>Telemedicine di Indonesia</h3><p>Layanan seperti Halodoc memungkinkan konsultasi video dengan dokter, berguna bagi daerah yang jauh dari fasilitas kesehatan.</p></div></article>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <h2>Coba sendiri: multimedia di tubuh manusia</h2>
+  <p class="lead">Arahkan kursor, ketuk, atau fokuskan titik di tubuh untuk melihat teknologinya.</p>
+  <div class="grid two body-wrap">
+    <div class="body">
+      <svg viewBox="0 0 200 360" role="img" aria-label="Siluet tubuh manusia dengan empat titik interaktif">
+        <circle cx="100" cy="42" r="28" class="shape"/>
+        <rect x="64" y="78" width="72" height="110" rx="26" class="shape"/>
+        <rect x="26" y="84" width="26" height="110" rx="13" class="shape"/>
+        <rect x="148" y="84" width="26" height="110" rx="13" class="shape"/>
+        <rect x="68" y="192" width="30" height="150" rx="14" class="shape"/>
+        <rect x="102" y="192" width="30" height="150" rx="14" class="shape"/>
+      </svg>
+      <button class="hot" style="left:50%;top:11%" data-i="0" aria-label="Kepala"></button>
+      <button class="hot" style="left:50%;top:32%" data-i="1" aria-label="Dada"></button>
+      <button class="hot" style="left:14%;top:38%" data-i="2" aria-label="Lengan"></button>
+      <button class="hot" style="left:42%;top:72%" data-i="3" aria-label="Kaki"></button>
+    </div>
+    <div class="callout" id="info"><h3>Pilih satu titik</h3><p>Penjelasan teknologi akan muncul di sini.</p></div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="slide split flip">
+  <div class="callout big">Kombinasi visual dan audio membantu materi bertahan lebih lama di ingatan dibanding teks saja.</div>
+  <div><h2>Education: belajar tidak lagi terikat kelas</h2>
+  <ul class="list">
+    <li><strong>E-learning:</strong> materi diakses kapan saja dari ponsel.</li>
+    <li><strong>Video pembelajaran:</strong> konsep sulit bisa diulang.</li>
+    <li><strong>Gamifikasi:</strong> poin dan streak membuat betah belajar.</li>
+    <li><strong>Simulasi:</strong> praktik virtual untuk lab dan keterampilan teknis.</li>
+  </ul></div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+  <h2>Education: studi kasus</h2>
+  <div class="bento">
+    <article class="card main"><figure class="fig" ><img src="images/edu-ruangguru.jpg" alt="Siswa belajar lewat aplikasi video di ponsel" width="800" height="500" loading="lazy" onerror="this.remove()"><figcaption>Foto: Aplikasi Ruang guru, https://app.ruangguru.com/</figcaption></figure><h3>Ruangguru</h3><p>Video belajar, latihan soal, dan kelas online untuk pelajar Indonesia dalam satu aplikasi. Contoh paling dekat dengan kita karena memakai kurikulum lokal.</p></article>
+    <article class="card"><figure class="fig" ><img src="images/edu-duolingo.webp" alt="Latihan bahasa di aplikasi ponsel" width="10" height="" loading="lazy" onerror="this.remove()"><figcaption>Foto: Aplikasi Duolingo, https://id.duolingo.com/</figcaption></figure><h3>Duolingo</h3><p>Latihan singkat, audio, dan streak yang membangun kebiasaan harian.</p></article>
+    <article class="card"><figure class="fig" data-ph="Taruh gambar: images/edu-khan.webp"><img src="images/edu-khan.webp" alt="Murid belajar dengan video dan latihan interaktif" width="800" height="500" loading="lazy" onerror="this.remove()"><figcaption>Foto: Aplikasi Khan Academy, https://id.khanacademy.org/</figcaption></figure><h3>Khan Academy</h3><p>Video pendek dan latihan interaktif gratis sesuai kecepatan murid.</p></article>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+  <h2>Kuis mini: uji pemahamanmu</h2>
+  <div class="quiz" id="quiz"></div>
+</section>
+
+<!-- 9 -->
+<section class="slide grad">
+  <h2>Entertainment: multimedia adalah produknya</h2>
+  <div class="tiles four">
+    <div><h3>Streaming</h3><p>Film, musik, dan podcast sesuai permintaan.</p></div>
+    <div><h3>Game</h3><p>Grafik, suara, dan interaksi real-time.</p></div>
+    <div><h3>Efek visual</h3><p>CGI dan motion capture menghidupkan dunia fiksi.</p></div>
+    <div><h3>Kreator</h3><p>Siapa saja bisa memproduksi dan menyebarkan video.</p></div>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+  <h2>Entertainment: studi kasus</h2>
+  <p class="lead">Pilih satu contoh.</p>
+  <div class="tabs">
+    <div class="tablist" role="tablist"></div>
+    <div class="tabp callout" id="tabp" role="tabpanel"></div>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="slide">
+  <h2>Perbandingan tiga industri</h2>
+  <div class="toggle" role="group" aria-label="Pilih tampilan">
+    <button class="on" data-t="pos">Dampak positif</button>
+    <button data-t="neg">Tantangan</button>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Industri</th><th id="col">Dampak positif</th></tr></thead>
+      <tbody id="cmp"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 12 -->
+<section class="slide">
+  <h2>Tren ke depan</h2>
+  <div class="blocks">
+    <div class="b1"><h3>AI</h3><p>Rekomendasi lebih personal, asisten belajar, dan bantuan membaca citra medis. Perlu etika dan transparansi.</p></div>
+    <div class="b2"><h3>AR dan VR</h3><p>Pelatihan bedah, kelas imersif, dan hiburan interaktif makin terjangkau.</p></div>
+    <div class="b3"><h3>Aksesibilitas</h3><p>Teks otomatis dan deskripsi gambar membuat multimedia bisa dinikmati lebih luas.</p></div>
+  </div>
+</section>
+
+<!-- 13 -->
+<section class="slide">
+  <h2>Kesimpulan</h2>
+  <div class="statements">
+    <p>Multimedia mengubah cara layanan kesehatan dijelaskan, ilmu dipelajari, dan hiburan dinikmati.</p>
+    <p>Manfaatnya besar, tetapi privasi, kecanduan, dan kesenjangan akses harus dikelola.</p>
+    <p>AI dan VR akan memperluas dampaknya, jadi literasi digital makin penting.</p>
+  </div>
+</section>
+
+<!-- 14 -->
+<section class="slide">
+  <h2>Referensi</h2>
+  <ol class="list refs">
+    <li>World Health Organization. (2021). Global strategy on digital health 2020–2025. Geneva: WHO. https://www.who.int/publications/i/item/9789240020924</li>
+    <li>World Health Organization. (2025, 23 Mei). World Health Assembly endorses extension of the global digital health strategy to 2027. https://www.who.int/news/item/23-05-2025-world-health-assembly-endorses-extension-of-the-global-digital-health-strategy-to-2027</li>
+    <li>Laver, K. E., Lange, B., George, S., Deutsch, J. E., Saposnik, G., Chapman, M., & Crotty, M. (2025). Virtual reality for stroke rehabilitation. Cochrane Database of Systematic Reviews, Issue 6, CD008349. https://doi.org/10.1002/14651858.CD008349.pub5</li>
+    <li>UNESCO, Global Education Monitoring Report Team. (2023). Global Education Monitoring Report 2023: Technology in education, a tool on whose terms? Paris: UNESCO. https://iite.unesco.org/news/global-education-monitoring-report-2023-technology-in-education-a-tool-on-whose-terms</li>
+    <li>Netflix Technology Blog. (2026, Agustus). MAPS: Netflix's multimodal asset personalization at scale. https://netflixtechblog.com/maps-netflixs-multimodal-asset-personalization-at-scale-32f96320785e</li>
+  </ol>
+</section>
+
+</main>
+
+<nav class="nav" aria-label="Navigasi slide">
+  <button id="prev" aria-label="Slide sebelumnya">&#8592;</button>
+  <span id="count" aria-live="off">1 / 14</span>
+  <button id="next" aria-label="Slide berikutnya">&#8594;</button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
