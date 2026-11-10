@@ -2,8 +2,9 @@
 
 Presentasi interaktif berbasis web untuk Proyek UTS Multimedia (IF562528), Universitas PGRI Ronggolawe Tuban. Opsi 1: Presentasi Interaktif.
 
-**Nama:** [Nama Lengkap] | **NIM:** [NIM]
-**Live:** [URL GitHub Pages/Vercel]
+**Nama:** Sendy Prasetya Nugraha | **NIM:** 1412240078
+**Nama:** Rendy Eka Ariyanto     | **NIM:** 1412240074 
+**Live:** https://sendypn757-sys.github.io/multimedia-presentasi/
 
 ## Deskripsi
 Presentasi 14 slide yang membahas dampak multimedia pada tiga industri: Healthcare, Education, dan Entertainment. Dibuat dengan HTML, CSS, dan JavaScript murni tanpa framework, sehingga ringan dan mudah dipelajari. Setiap industri dilengkapi studi kasus nyata, gambar, dan elemen interaktif.
@@ -16,34 +17,34 @@ Presentasi 14 slide yang membahas dampak multimedia pada tiga industri: Healthca
 5. Perbandingan tiga industri, tren ke depan, kesimpulan, dan referensi
 
 ## Cara membuka / menjalankan
-- **Lokal (paling mudah):** unduh repo lalu buka `index.html` di browser.
-- **Opsional:** jalankan lewat ekstensi Live Server di VS Code agar perilakunya sama seperti saat online.
-- **Online:** buka link live di atas.
+- **Online:** buka https://sendypn757-sys.github.io/multimedia-presentasi/ (atau pindai kode QR).
+- **Lokal:** unduh repo lalu buka `index.html` di browser. Video YouTube di slide 10 memerlukan koneksi internet.
+- **Opsional:** jalankan lewat ekstensi Live Server di VS Code.
 - **Navigasi:** tombol panah di layar, keyboard (← →, Home, End), atau geser di layar sentuh.
 
 ## Fitur
 - Empat elemen interaktif: titik hotspot tubuh (slide 5), kuis 4 soal dengan skor (slide 8), tab studi kasus dengan pemutar video (slide 10), dan toggle perbandingan dampak positif dan tantangan (slide 11)
 - Tata letak berbeda di tiap slide: split, bento grid, baris, tab, dan kolom blok warna
 - Animasi masuk berurutan, transisi antar slide, progress bar, dan efek hover
-- Video lokal MP4 dengan pemuatan hemat data (hanya metadata sebelum diputar)
+- Tiga video YouTube yang disematkan (embed); pemutar baru dimuat saat diklik agar halaman tetap ringan
 - Responsif untuk ponsel, tablet, dan desktop
 - Aksesibilitas: navigasi keyboard, `alt` text pada gambar, label ARIA, dan dukungan *prefers-reduced-motion*
 
 ## Tools
-VS Code, Git dan GitHub, GitHub Pages, Color Hunt (palet), Google Fonts (Plus Jakarta Sans), Lighthouse dan WAVE (pengujian).
+VS Code, Git dan GitHub, GitHub Pages, Color Hunt (palet), Google Fonts (Plus Jakarta Sans), Unsplash (foto), Lighthouse dan WAVE (pengujian).
 
 ## Design decisions
 - Palet empat warna dari Color Hunt: `#071B2B` (latar), `#167D8D` (aksen), `#B9E4E8` (judul), `#EEEEEE` (teks).
 - Satu keluarga font, yaitu Plus Jakarta Sans, untuk menjaga konsistensi.
 - Tata letak dibuat bervariasi agar presentasi tidak monoton, sementara warna dan tipografi tetap seragam.
 - Navigasi slide ditulis sendiri tanpa library presentasi, agar ukuran kecil dan perilakunya bisa dikendalikan.
-- Video tidak dimuat penuh di awal untuk menjaga waktu muat halaman.
+- Video disematkan dari YouTube, bukan diunggah ulang, agar repo kecil, halaman cepat dimuat, dan hak cipta tetap pada pemilik kanal.
 
 ## Challenges & solutions
 > Sesuaikan dengan pengalamanmu sendiri.
 - **Layout panel video terlalu kosong dan teks menumpuk di bawah.** Solusi: panel dibagi menjadi dua kolom dengan CSS Grid, video di kiri dan keterangan di kanan, lalu kembali satu kolom di layar kecil.
-- **Video YouTube tidak bisa diputar saat halaman dibuka langsung dari folder (`file://`).** Solusi: memakai video MP4 lokal yang bisa diputar langsung dari folder proyek.
-- **Ukuran file video bisa memperlambat situs.** Solusi: video dibuat 720p berformat MP4 (H.264) dan dimuat hanya saat dibutuhkan.
+- **Tampilan slide 10 di HP menampilkan tab dan panel berdampingan sehingga video mengecil.** Solusi: menambahkan aturan *media query* agar di layar sempit tab berada di atas dan panel selebar layar.
+- **Video MP4 lokal terasa lambat saat dimuat lewat GitHub Pages.** Solusi: beralih ke video YouTube yang disematkan dan dimuat hanya saat tombol putar ditekan.
 - [Tambahkan tantangan lain yang kamu alami]
 
 ## Struktur folder
@@ -51,18 +52,21 @@ VS Code, Git dan GitHub, GitHub Pages, Color Hunt (palet), Google Fonts (Plus Ja
 index.html     struktur 14 slide
 style.css      tampilan, animasi, dan efek hover
 script.js      navigasi, hotspot, kuis, tab video, toggle
-images/        gambar slide
-video/         video studi kasus (netflix.mp4, game.mp4, film.mp4)
-screenshots/   tangkapan layar untuk dokumentasi
+images/        gambar slide 4 dan 7
+screenshoot/   tangkapan layar untuk dokumentasi
 ```
 
 ## Screenshot
-Simpan di folder `screenshots/` lalu tautkan di sini (minimal 5-10, termasuk tampilan ponsel).
+Tangkapan layar tampilan desktop dan HP.
 
-| Slide | Gambar |
-|-------|--------|
-| Judul | ![](screenshots/01-judul.png) |
-| [Slide lain] | ![](screenshots/[nama].png) |
+| File | Perangkat | Keterangan |
+|------|-----------|------------|
+| ![](screenshoot/1.png) | Desktop | Slide 1 |
+| ![](screenshoot/2.jpeg) | HP | Slide 1 |
+| ![](screenshoot/3.png) | Desktop | Slide 4 |
+| ![](screenshoot/4.jpeg) | HP | Slide 8 |
+| ![](screenshoot/5.png) | Desktop | Slide 5 |
+| ![](screenshoot/6.jpeg) | HP | Slide 10 |
 
 ## Referensi
 1. World Health Organization. (2021). *Global strategy on digital health 2020–2025*. Geneva: WHO. https://www.who.int/publications/i/item/9789240020924. Diakses 9 November 2026.
@@ -72,16 +76,33 @@ Simpan di folder `screenshots/` lalu tautkan di sini (minimal 5-10, termasuk tam
 5. Netflix Technology Blog. (2026, Agustus). *MAPS: Netflix's multimodal asset personalization at scale*. https://netflixtechblog.com/maps-netflixs-multimodal-asset-personalization-at-scale-32f96320785e. Diakses 9 November 2026.
 
 ## Atribusi gambar
-| File | Fotografer/pembuat | Sumber | Lisensi |
-|------|--------------------|--------|---------|
-| images/[nama].webp | [nama] | [Unsplash/Pexels/press kit] | [lisensi] |
 
-## Atribusi video
-| File | Judul video | Pembuat/kanal | Tahun | Sumber/URL |
-|------|-------------|---------------|-------|------------|
-| video/netflix.mp4 | [judul] | [kanal] | [tahun] | [URL] |
-| video/game.mp4 | [judul] | [kanal] | [tahun] | [URL] |
-| video/film.mp4 | [judul] | [kanal] | [tahun] | [URL] |
+**Slide 4 (Healthcare): foto dari Unsplash**
+
+| File | Fotografer | Sumber | Lisensi |
+|------|------------|--------|---------|
+| images/healthcare-vr.webp | Getty Images | Unsplash, https://unsplash.com/id/foto/dokter-wanita-asia-menggunakan-realitas-virtual-vr-3d-untuk-menganalisis-pemeriksaan-medis-laporan-di-rumah-sakit-kantor-medis-_Q9iw6tQtPQ| Unsplash License |
+| images/healthcare-anatomi.webp | 8Machine | Unsplash, https://unsplash.com/id/foto/tablet-dengan-simbol-medis-di-atasnya-dan-stetoskop-di-sebelahnya-gtrQCS8-tzo | Unsplash License |
+| images/healthcare-telemedicine.webp | Getty Images | Unsplash, https://unsplash.com/id/foto/pasien-wanita-latin-duduk-di-sofa-di-rumah-melakukan-panggilan-video-dengan-dokter-wanita-online-di-amerika-latin-IpwhZo5dhMQ | Unsplash License |
+
+**Slide 7 (Education): logo dan aset dari press kit resmi**
+
+| File | Pemilik | Sumber | Lisensi |
+|------|---------|--------|---------|
+| images/edu-ruangguru.jpg | Ruangguru | Press kit Ruangguru, https://ruangguru.com/press | Sesuai ketentuan press kit |
+| images/edu-duolingo.webp | Duolingo | Aset pemasaran Duolingo, https://design.duolingo.com/marketing/assets | Sesuai ketentuan press kit |
+| images/edu-khan.webp | Khan Academy | Brand kit Khan Academy, https://brand.khanacademy.org/ | Sesuai ketentuan brand kit |
+
+Seluruh aset diakses pada 4 November 2026.
+
+## Atribusi video (Slide 10)
+Video ditampilkan lewat pemutar YouTube resmi (embed) dan tidak diunggah ulang.
+
+| Tab | Judul video | Kanal | URL | Diakses |
+|-----|-------------|-------|-----|---------|
+| Netflix | Anime to watch on Netflix November 2026 | Netflix | https://www.youtube.com/watch?v=btCh3id7DfM | 4 November 2026 |
+| Industri game | [judul video] | [nama kanal] | https://www.youtube.com/watch?v=tmgZcMVxvsQ | 4 November 2026 |
+| Film dan efek visual | [judul video] | [nama kanal] | https://www.youtube.com/watch?v=_I74C4_w1so | 4 November 2026 |
 
 ## Catatan
 Seluruh kode ditulis dan dimodifikasi untuk keperluan tugas ini. Logo, gambar, dan video milik pihak ketiga digunakan untuk keperluan edukasi dengan atribusi sumber di atas.
