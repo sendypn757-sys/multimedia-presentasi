@@ -272,3 +272,7 @@ tbody tr:hover td:first-child{color:#fff}
   .tabp{padding:1rem}
   .tabp .video{width:100%}
 }
+/* ===== Gambar logo (slide 7) ===== */
+.fig.logo{background:#fff}
+.fig.logo::before{color:var(--navy)}
+.fig.logo img{object-fit:contain;padding:.5rem}

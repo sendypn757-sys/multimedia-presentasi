@@ -162,15 +162,15 @@
   });
 
   /* ---------- Slide 10: tab studi kasus dengan video YouTube ---------- */
-  /* GANTI id dengan ID video YouTube (11 karakter setelah "v=" pada URL) */
+  /* id = ID video YouTube (11 karakter setelah "v=" pada URL) */
   var cases = [
-    { name: 'Netflix', file: 'video/netflix.mp4', poster: '', captions: '', id: '',
-      src: 'Anime to watch on Netflix November 2026, Netflix',
+    { name: 'Netflix', file: '', poster: '', captions: '', id: 'Cm73ma6Ibcs',
+      src: 'Blue Eye Samurai Hammerscale, Netflix',
       text: 'Memakai rekomendasi berbasis data dan streaming adaptif yang menyesuaikan kualitas video dengan kecepatan internet penonton.' },
-    { name: 'Industri game', file: 'video/game.mp4', poster: '', captions: '', id: '',
-      src: 'ROUND 1, That first thrill |MLBB x SF6, Mobile Legends : Bang Bang',
+    { name: 'Industri game', file: '', poster: '', captions: '', id: 'nRDkkpScTF4',
+      src: 'MPL ID S18 GRAND FINALS Bahasa Indonesia, MPL Indonesia',
       text: 'Game mobile seperti Mobile Legends membangun komunitas dan turnamen esports yang besar di Indonesia.' },
-    { name: 'Film dan efek visual', file: 'video/film.mp4', poster: '', captions: '', id: '',
+    { name: 'Film dan efek visual', file: '', poster: '', captions: '', id: '_I74C4_w1so',
       src: 'DEADPOOL & WOLVERINE | VFX Breakdown, FilmIsNow Epic Movie Zone',
       text: 'CGI memungkinkan adegan yang mustahil direkam secara nyata, dari dunia fantasi sampai aksi berskala besar.' }
   ];
@@ -217,7 +217,17 @@
     }
     tp.querySelector('h3').textContent = c.name;
     tp.querySelectorAll('p')[0].textContent = c.text;
-    tp.querySelector('.src').textContent = 'Video: ' + c.src;
+    var srcEl = tp.querySelector('.src');
+    srcEl.textContent = 'Video: ' + c.src;
+    if (!c.file && /^[\w-]{11}$/.test(c.id)) {
+      var a = document.createElement('a');
+      a.href = 'https://www.youtube.com/watch?v=' + c.id;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = 'Tonton di YouTube';
+      srcEl.appendChild(document.createTextNode(' · '));
+      srcEl.appendChild(a);
+    }
   }
   cases.forEach(function (c, i) {
     var b = document.createElement('button');

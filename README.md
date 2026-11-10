@@ -2,8 +2,9 @@
 
 Presentasi interaktif berbasis web untuk Proyek UTS Multimedia (IF562528), Universitas PGRI Ronggolawe Tuban. Opsi 1: Presentasi Interaktif.
 
-**Nama:** Sendy Prasetya Nugraha | **NIM:** 1412240078
-**Nama:** Rendy Eka Ariyanto     | **NIM:** 1412240074 
+- **Nama:** Sendy Prasetya Nugraha | **NIM:** 1412240078
+- **Nama:** Rendy Eka Ariyanto | **NIM:** 1412240074
+
 **Live:** https://sendypn757-sys.github.io/multimedia-presentasi/
 
 ## Deskripsi
@@ -41,11 +42,9 @@ VS Code, Git dan GitHub, GitHub Pages, Color Hunt (palet), Google Fonts (Plus Ja
 - Video disematkan dari YouTube, bukan diunggah ulang, agar repo kecil, halaman cepat dimuat, dan hak cipta tetap pada pemilik kanal.
 
 ## Challenges & solutions
-> Sesuaikan dengan pengalamanmu sendiri.
 - **Layout panel video terlalu kosong dan teks menumpuk di bawah.** Solusi: panel dibagi menjadi dua kolom dengan CSS Grid, video di kiri dan keterangan di kanan, lalu kembali satu kolom di layar kecil.
 - **Tampilan slide 10 di HP menampilkan tab dan panel berdampingan sehingga video mengecil.** Solusi: menambahkan aturan *media query* agar di layar sempit tab berada di atas dan panel selebar layar.
 - **Video MP4 lokal terasa lambat saat dimuat lewat GitHub Pages.** Solusi: beralih ke video YouTube yang disematkan dan dimuat hanya saat tombol putar ditekan.
-- [Tambahkan tantangan lain yang kamu alami]
 
 ## Struktur folder
 ```
@@ -81,7 +80,7 @@ Tangkapan layar tampilan desktop dan HP.
 
 | File | Fotografer | Sumber | Lisensi |
 |------|------------|--------|---------|
-| images/healthcare-vr.webp | Getty Images | Unsplash, https://unsplash.com/id/foto/dokter-wanita-asia-menggunakan-realitas-virtual-vr-3d-untuk-menganalisis-pemeriksaan-medis-laporan-di-rumah-sakit-kantor-medis-_Q9iw6tQtPQ| Unsplash License |
+| images/healthcare-vr.webp | Getty Images | Unsplash, https://unsplash.com/id/foto/dokter-wanita-asia-menggunakan-realitas-virtual-vr-3d-untuk-menganalisis-pemeriksaan-medis-laporan-di-rumah-sakit-kantor-medis-_Q9iw6tQtPQ | Unsplash License |
 | images/healthcare-anatomi.webp | 8Machine | Unsplash, https://unsplash.com/id/foto/tablet-dengan-simbol-medis-di-atasnya-dan-stetoskop-di-sebelahnya-gtrQCS8-tzo | Unsplash License |
 | images/healthcare-telemedicine.webp | Getty Images | Unsplash, https://unsplash.com/id/foto/pasien-wanita-latin-duduk-di-sofa-di-rumah-melakukan-panggilan-video-dengan-dokter-wanita-online-di-amerika-latin-IpwhZo5dhMQ | Unsplash License |
 
@@ -100,9 +99,9 @@ Video ditampilkan lewat pemutar YouTube resmi (embed) dan tidak diunggah ulang.
 
 | Tab | Judul video | Kanal | URL | Diakses |
 |-----|-------------|-------|-----|---------|
-| Netflix | Anime to watch on Netflix November 2026 | Netflix | https://www.youtube.com/watch?v=btCh3id7DfM | 4 November 2026 |
-| Industri game | [judul video] | [nama kanal] | https://www.youtube.com/watch?v=tmgZcMVxvsQ | 4 November 2026 |
-| Film dan efek visual | [judul video] | [nama kanal] | https://www.youtube.com/watch?v=_I74C4_w1so | 4 November 2026 |
+| Netflix | Blue Eye Samurai Hammerscale | Netflix | https://www.youtube.com/watch?v=Cm73ma6Ibcs | 4 November 2026 |
+| Industri game | MPL ID S18 GRAND FINALS Bahasa Indonesia | MPL Indonesia | https://www.youtube.com/live/nRDkkpScTF4 | 4 November 2026 |
+| Film dan efek visual | DEADPOOL & WOLVERINE \| VFX Breakdown | FilmIsNow Epic Movie Zone | https://www.youtube.com/watch?v=_I74C4_w1so | 4 November 2026 |
 
 ## Catatan
 Seluruh kode ditulis dan dimodifikasi untuk keperluan tugas ini. Logo, gambar, dan video milik pihak ketiga digunakan untuk keperluan edukasi dengan atribusi sumber di atas.
