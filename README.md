@@ -53,7 +53,7 @@ index.html     struktur 14 slide
 style.css      tampilan, animasi, dan efek hover
 script.js      navigasi, hotspot, kuis, tab video, toggle
 images/        gambar slide 4 dan 7
-screenshoot/   tangkapan layar untuk dokumentasi
+screenshot/   tangkapan layar untuk dokumentasi
 ```
 
 ## Screenshot
@@ -61,12 +61,12 @@ Tangkapan layar tampilan desktop dan HP.
 
 | File | Perangkat | Keterangan |
 |------|-----------|------------|
-| ![](screenshoot/1.png) | Desktop | Slide 1 |
-| ![](screenshoot/2.jpeg) | HP | Slide 1 |
-| ![](screenshoot/3.png) | Desktop | Slide 4 |
-| ![](screenshoot/4.jpeg) | HP | Slide 8 |
-| ![](screenshoot/5.png) | Desktop | Slide 5 |
-| ![](screenshoot/6.jpeg) | HP | Slide 10 |
+| ![](screenshot/1.png) | Desktop | Slide 1 |
+| ![](screenshot/2.jpeg) | HP | Slide 1 |
+| ![](screenshot/3.png) | Desktop | Slide 4 |
+| ![](screenshot/4.jpeg) | HP | Slide 8 |
+| ![](screenshot/5.png) | Desktop | Slide 5 |
+| ![](screenshot/6.jpeg) | HP | Slide 10 |
 
 ## Referensi
 1. World Health Organization. (2021). *Global strategy on digital health 2020–2025*. Geneva: WHO. https://www.who.int/publications/i/item/9789240020924. Diakses 9 November 2026.
