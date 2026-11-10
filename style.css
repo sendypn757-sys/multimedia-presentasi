@@ -261,3 +261,14 @@ tbody tr:hover td:first-child{color:#fff}
   .tabp .video{grid-row:auto;margin-bottom:1rem}
   .tabp h3,.tabp p,.tabp .src{grid-column:1;grid-row:auto}
 }
+
+.refs li{overflow-wrap:anywhere;font-size:.85rem}
+.refs{gap:.7rem}
+ 
+/* ===== Perbaikan mobile slide 10 ===== */
+@media (max-width:800px){
+  .tabs{grid-template-columns:1fr}
+  .tablist{flex-direction:row;flex-wrap:wrap}
+  .tabp{padding:1rem}
+  .tabp .video{width:100%}
+}
