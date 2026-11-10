@@ -6,6 +6,7 @@ Presentasi interaktif berbasis web untuk Proyek UTS Multimedia (IF562528), Unive
 - **Nama:** Rendy Eka Ariyanto | **NIM:** 1412240074
 
 **Live:** https://sendypn757-sys.github.io/multimedia-presentasi/
+![QR code presentasi](images/qr-presentasi.png)
 
 ## Deskripsi
 Presentasi 14 slide yang membahas dampak multimedia pada tiga industri: Healthcare, Education, dan Entertainment. Dibuat dengan HTML, CSS, dan JavaScript murni tanpa framework, sehingga ringan dan mudah dipelajari. Setiap industri dilengkapi studi kasus nyata, gambar, dan elemen interaktif.
